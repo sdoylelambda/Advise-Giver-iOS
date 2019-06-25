@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Advise-Giver-->
+        <!--Advice-Giver-->
         <scene sceneID="kc1-EH-sBz">
             <objects>
                 <viewController id="J9j-hd-sUE" sceneMemberID="viewController">
@@ -44,13 +44,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k9S-d1-QHH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Advise-Giver" id="Q1l-SD-Eiy"/>
+                    <navigationItem key="navigationItem" title="Advice-Giver" id="Q1l-SD-Eiy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdR-tq-Pdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510.14492753623193" y="152.67857142857142"/>
         </scene>
-        <!--Advise-Main-->
+        <!--Advice-Main-->
         <scene sceneID="GCd-pL-T6E">
             <objects>
                 <viewController id="ieP-DF-h2l" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pWJ-me-M4B"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Advise-Main" id="946-NT-DQL">
+                    <navigationItem key="navigationItem" title="Advice-Main" id="946-NT-DQL">
                         <barButtonItem key="rightBarButtonItem" title="Abous Us" id="DeV-SN-ZfE">
                             <connections>
                                 <segue destination="7qc-m5-lHK" kind="show" id="Glo-V0-3c2"/>
@@ -224,7 +224,7 @@
         <!--My Q's-->
         <scene sceneID="aj5-nV-njt">
             <objects>
-                <viewController id="diZ-9Q-0s1" sceneMemberID="viewController">
+                <viewController id="diZ-9Q-0s1" customClass="MyQTableViewController" customModule="AdviceGiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ic5-ej-hBD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@
                                 <rect key="frame" x="5" y="93" width="404" height="715"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6aB-z0-Idy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myQCell" id="6aB-z0-Idy">
                                         <rect key="frame" x="0.0" y="28" width="404" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6aB-z0-Idy" id="FeT-k2-kaW">
@@ -262,10 +262,10 @@
             </objects>
             <point key="canvasLocation" x="-168" y="2383"/>
         </scene>
-        <!--View Controller-->
+        <!--MyQ Detail View Controller-->
         <scene sceneID="tsy-No-qmk">
             <objects>
-                <viewController id="V9f-rF-Ikd" sceneMemberID="viewController">
+                <viewController id="V9f-rF-Ikd" customClass="MyQDetailViewController" customModule="AdviceGiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gl-ff-EAO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +316,7 @@
         <!--Ask Q-->
         <scene sceneID="8eK-Ha-rhZ">
             <objects>
-                <viewController id="Ifi-h8-ScK" sceneMemberID="viewController">
+                <viewController id="Ifi-h8-ScK" customClass="QViewController" customModule="AdviceGiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O3L-xK-6UT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,11 +328,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kU9-Um-cHm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kU9-Um-cHm" colorLabel="IBBuiltInLabel-Green">
                                 <rect key="frame" x="20" y="258" width="374" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="backgroundColor" red="0.78191304206848145" green="0.85351103544235229" blue="0.94508594274520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -382,7 +381,7 @@
         <!--My Mentors-->
         <scene sceneID="rrm-7d-NhR">
             <objects>
-                <viewController id="7jg-Ei-43Q" sceneMemberID="viewController">
+                <viewController id="7jg-Ei-43Q" customClass="MentorsTableViewController" customModule="AdviceGiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nxz-3G-JOq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,7 +390,7 @@
                                 <rect key="frame" x="5" y="93" width="404" height="715"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Jqh-q0-hSj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mentorsCell" id="Jqh-q0-hSj">
                                         <rect key="frame" x="0.0" y="28" width="404" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jqh-q0-hSj" id="afe-hY-ryC">
@@ -420,7 +419,7 @@
         <!--Announcements-->
         <scene sceneID="VOv-bV-pXV">
             <objects>
-                <viewController id="uSq-FA-jUb" sceneMemberID="viewController">
+                <viewController id="uSq-FA-jUb" customClass="AnnouncementsTableViewController" customModule="AdviceGiver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xXz-le-Hya">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -429,7 +428,7 @@
                                 <rect key="frame" x="5" y="93" width="404" height="715"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YV7-zj-nH4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="announcementsCell" id="YV7-zj-nH4">
                                         <rect key="frame" x="0.0" y="28" width="404" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YV7-zj-nH4" id="ZCm-FO-jPB">

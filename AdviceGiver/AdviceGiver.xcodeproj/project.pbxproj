@@ -12,13 +12,14 @@
 		843D92C522C18FE2009B3FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843D92C422C18FE2009B3FDD /* Assets.xcassets */; };
 		843D92C822C18FE2009B3FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843D92C622C18FE2009B3FDD /* LaunchScreen.storyboard */; };
 		843D92D022C1BA97009B3FDD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92CF22C1BA97009B3FDD /* Model.swift */; };
-		843D92D222C1BAA9009B3FDD /* Advise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92D122C1BAA9009B3FDD /* Advise.swift */; };
+		843D92D222C1BAA9009B3FDD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92D122C1BAA9009B3FDD /* Question.swift */; };
 		843D92D622C2C2E2009B3FDD /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92D522C2C2E2009B3FDD /* APIController.swift */; };
 		843D92D822C2C650009B3FDD /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92D722C2C650009B3FDD /* QViewController.swift */; };
 		843D92DB22C2C695009B3FDD /* MyQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92DA22C2C695009B3FDD /* MyQTableViewController.swift */; };
 		843D92DD22C2C6CC009B3FDD /* MyQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92DC22C2C6CC009B3FDD /* MyQDetailViewController.swift */; };
 		843D92DF22C2C716009B3FDD /* MentorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92DE22C2C716009B3FDD /* MentorsTableViewController.swift */; };
 		843D92E122C2C72D009B3FDD /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92E022C2C72D009B3FDD /* AnnouncementsTableViewController.swift */; };
+		843D92E322C2CB33009B3FDD /* MyQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92E222C2CB33009B3FDD /* MyQTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +30,14 @@
 		843D92C722C18FE2009B3FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843D92C922C18FE2009B3FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843D92CF22C1BA97009B3FDD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		843D92D122C1BAA9009B3FDD /* Advise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advise.swift; sourceTree = "<group>"; };
+		843D92D122C1BAA9009B3FDD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		843D92D522C2C2E2009B3FDD /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		843D92D722C2C650009B3FDD /* QViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
 		843D92DA22C2C695009B3FDD /* MyQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQTableViewController.swift; sourceTree = "<group>"; };
 		843D92DC22C2C6CC009B3FDD /* MyQDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQDetailViewController.swift; sourceTree = "<group>"; };
 		843D92DE22C2C716009B3FDD /* MentorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsTableViewController.swift; sourceTree = "<group>"; };
 		843D92E022C2C72D009B3FDD /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
+		843D92E222C2CB33009B3FDD /* MyQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 		843D92D322C2B85E009B3FDD /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				843D92D122C1BAA9009B3FDD /* Advise.swift */,
+				843D92D122C1BAA9009B3FDD /* Question.swift */,
 				843D92D522C2C2E2009B3FDD /* APIController.swift */,
 				843D92CF22C1BA97009B3FDD /* Model.swift */,
 			);
@@ -103,6 +105,7 @@
 				843D92DE22C2C716009B3FDD /* MentorsTableViewController.swift */,
 				843D92E022C2C72D009B3FDD /* AnnouncementsTableViewController.swift */,
 				843D92DA22C2C695009B3FDD /* MyQTableViewController.swift */,
+				843D92E222C2CB33009B3FDD /* MyQTableViewCell.swift */,
 				843D92DC22C2C6CC009B3FDD /* MyQDetailViewController.swift */,
 				843D92D722C2C650009B3FDD /* QViewController.swift */,
 			);
@@ -185,10 +188,11 @@
 				843D92DB22C2C695009B3FDD /* MyQTableViewController.swift in Sources */,
 				843D92BE22C18FE1009B3FDD /* AppDelegate.swift in Sources */,
 				843D92DF22C2C716009B3FDD /* MentorsTableViewController.swift in Sources */,
-				843D92D222C1BAA9009B3FDD /* Advise.swift in Sources */,
+				843D92D222C1BAA9009B3FDD /* Question.swift in Sources */,
 				843D92E122C2C72D009B3FDD /* AnnouncementsTableViewController.swift in Sources */,
 				843D92D822C2C650009B3FDD /* QViewController.swift in Sources */,
 				843D92D022C1BA97009B3FDD /* Model.swift in Sources */,
+				843D92E322C2CB33009B3FDD /* MyQTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

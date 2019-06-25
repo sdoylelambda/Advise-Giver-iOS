@@ -1,6 +1,6 @@
 import Foundation
 
-struct Advise: Codable {
+struct Question: Codable {
     
     let announcements: [String];
     let appointments: String;

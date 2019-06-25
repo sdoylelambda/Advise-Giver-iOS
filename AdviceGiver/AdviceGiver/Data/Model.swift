@@ -3,34 +3,34 @@ import Foundation
 class Model {
     static let shared = Model()
     private init() {}
-    var advise: Advise?
-    var savedAdvise: [Advise] = []
+    var question: Question?
+    var savedQuestion: [Question] = []
     
    
-    var numberOfAdvise: Int {
-        return savedAdvise.count
+    var numberOfQuestions: Int {
+        return savedQuestion.count
     }
     
-    func addAdvise(advise: Advise) {
-        savedAdvise.append(advise)
+    func addQuestion(advice: Question) {
+        savedQuestion.append(advice)
         saveToPersistence()
     }
     
-    func removeAdvise(at indexPath: IndexPath) {
-        savedAdvise.remove(at: indexPath.row)
+    func removeQuestion(at indexPath: IndexPath) {
+        savedQuestion.remove(at: indexPath.row)
         saveToPersistence()
     }
     
-    func savedAdvise(at indexPath: IndexPath) -> Advise {
+    func savedQuestion(at indexPath: IndexPath) -> Question {
         saveToPersistence()
-        return savedAdvise[indexPath.row]
+        return savedQuestion[indexPath.row]
     }
     
     private func loadToPersistence() {
         do {
             let memoriesData = try Data(contentsOf: memoriesFileURL)
             let decoder = JSONDecoder()
-            let decodedMemories = try decoder.decode([Advise].self, from: memoriesData)
+            let decodedMemories = try decoder.decode([Question].self, from: memoriesData)
             
             memories = decodedMemories
         } catch {
@@ -53,5 +53,5 @@ class Model {
         .appendingPathComponent("Documents")
         .appendingPathComponent("memories.json")
     
-    var memories: [Advise] = []
+    var memories: [Question] = []
 }
