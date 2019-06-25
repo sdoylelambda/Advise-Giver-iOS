@@ -6,3 +6,4 @@ class Model {
     var advise: Advise?
     var savedAdvise: [Advise] = []
 }
+
