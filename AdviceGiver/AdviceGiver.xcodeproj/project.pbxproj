@@ -11,6 +11,8 @@
 		843D92C322C18FE1009B3FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843D92C122C18FE1009B3FDD /* Main.storyboard */; };
 		843D92C522C18FE2009B3FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843D92C422C18FE2009B3FDD /* Assets.xcassets */; };
 		843D92C822C18FE2009B3FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843D92C622C18FE2009B3FDD /* LaunchScreen.storyboard */; };
+		843D92D022C1BA97009B3FDD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92CF22C1BA97009B3FDD /* Model.swift */; };
+		843D92D222C1BAA9009B3FDD /* Advise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92D122C1BAA9009B3FDD /* Advise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		843D92C422C18FE2009B3FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843D92C722C18FE2009B3FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843D92C922C18FE2009B3FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843D92CF22C1BA97009B3FDD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		843D92D122C1BAA9009B3FDD /* Advise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				843D92BD22C18FE1009B3FDD /* AppDelegate.swift */,
 				843D92C122C18FE1009B3FDD /* Main.storyboard */,
+				843D92CF22C1BA97009B3FDD /* Model.swift */,
+				843D92D122C1BAA9009B3FDD /* Advise.swift */,
 				843D92C422C18FE2009B3FDD /* Assets.xcassets */,
 				843D92C622C18FE2009B3FDD /* LaunchScreen.storyboard */,
 				843D92C922C18FE2009B3FDD /* Info.plist */,
@@ -133,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				843D92BE22C18FE1009B3FDD /* AppDelegate.swift in Sources */,
+				843D92D222C1BAA9009B3FDD /* Advise.swift in Sources */,
+				843D92D022C1BA97009B3FDD /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3qg-Pk-1fq">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Advise-Giver-->
         <scene sceneID="kc1-EH-sBz">
             <objects>
                 <viewController id="J9j-hd-sUE" sceneMemberID="viewController">
@@ -44,15 +44,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k9S-d1-QHH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Q1l-SD-Eiy">
-                        <barButtonItem key="rightBarButtonItem" title="Menu" id="C37-Q5-jfA"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Advise-Giver" id="Q1l-SD-Eiy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdR-tq-Pdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510.14492753623193" y="152.67857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Advise-Main-->
         <scene sceneID="GCd-pL-T6E">
             <objects>
                 <viewController id="ieP-DF-h2l" sceneMemberID="viewController">
@@ -159,10 +157,51 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pWJ-me-M4B"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Advise-Main" id="946-NT-DQL">
+                        <barButtonItem key="rightBarButtonItem" title="Abous Us" id="DeV-SN-ZfE">
+                            <connections>
+                                <segue destination="7qc-m5-lHK" kind="show" id="Glo-V0-3c2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajT-gk-vhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1389.8550724637682" y="152.67857142857142"/>
+        </scene>
+        <!--About us-->
+        <scene sceneID="aMP-da-x2e">
+            <objects>
+                <viewController id="7qc-m5-lHK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J2R-XD-Wmv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOB-w9-HEU">
+                                <rect key="frame" x="37" y="345" width="340" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Making professional counseling accessible, affordable, convenient - so anyone who struggles with life’s challenges can get help, anytime, anywhere.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-C5-fSL">
+                                <rect key="frame" x="148" y="255" width="119" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vF3-mm-0Lb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About us" id="QK7-rI-3RG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayw-RB-5Jm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.739130434783" y="152.67857142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g2H-hn-D5y">
