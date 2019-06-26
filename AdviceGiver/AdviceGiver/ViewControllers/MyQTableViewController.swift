@@ -6,7 +6,7 @@ class MyQTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.reloadData()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
@@ -22,18 +22,16 @@ class MyQTableViewController: UITableViewController {
         return Model.shared.numberOfQuestions
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MyQTableViewCell.reuseIdentifer, for: indexPath) as? UITableViewCell else {
-            fatalError("Cannot find MyQTableViewCell.")
-        }
 
-        let myQ = Model.shared.savedQuestion(at: indexPath)
-        cell.label.text = myQ.question
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: MyQTableViewCell.reuseIdentifer, for: indexPath)
+//
+//        let myQ = Model.shared.savedQuestion(at: indexPath)
+//        cell.textLabel?.text = myQ.myQs
+//
+//        return cell
+//    }}
 
-        return cell
-    }
-    
 
     /*
     // Override to support conditional editing of the table view.

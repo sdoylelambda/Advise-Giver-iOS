@@ -18,8 +18,8 @@
 		843D92DB22C2C695009B3FDD /* MyQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92DA22C2C695009B3FDD /* MyQTableViewController.swift */; };
 		843D92DD22C2C6CC009B3FDD /* MyQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92DC22C2C6CC009B3FDD /* MyQDetailViewController.swift */; };
 		843D92DF22C2C716009B3FDD /* MentorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92DE22C2C716009B3FDD /* MentorsTableViewController.swift */; };
-		843D92E122C2C72D009B3FDD /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92E022C2C72D009B3FDD /* AnnouncementsTableViewController.swift */; };
 		843D92E322C2CB33009B3FDD /* MyQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92E222C2CB33009B3FDD /* MyQTableViewCell.swift */; };
+		843D92E522C3D385009B3FDD /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D92E422C3D385009B3FDD /* AnnouncementsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		843D92DA22C2C695009B3FDD /* MyQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQTableViewController.swift; sourceTree = "<group>"; };
 		843D92DC22C2C6CC009B3FDD /* MyQDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQDetailViewController.swift; sourceTree = "<group>"; };
 		843D92DE22C2C716009B3FDD /* MentorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsTableViewController.swift; sourceTree = "<group>"; };
-		843D92E022C2C72D009B3FDD /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
 		843D92E222C2CB33009B3FDD /* MyQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQTableViewCell.swift; sourceTree = "<group>"; };
+		843D92E422C3D385009B3FDD /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 		843D92D922C2C664009B3FDD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				843D92E422C3D385009B3FDD /* AnnouncementsViewController.swift */,
 				843D92DE22C2C716009B3FDD /* MentorsTableViewController.swift */,
-				843D92E022C2C72D009B3FDD /* AnnouncementsTableViewController.swift */,
 				843D92DA22C2C695009B3FDD /* MyQTableViewController.swift */,
 				843D92E222C2CB33009B3FDD /* MyQTableViewCell.swift */,
 				843D92DC22C2C6CC009B3FDD /* MyQDetailViewController.swift */,
@@ -189,8 +189,8 @@
 				843D92BE22C18FE1009B3FDD /* AppDelegate.swift in Sources */,
 				843D92DF22C2C716009B3FDD /* MentorsTableViewController.swift in Sources */,
 				843D92D222C1BAA9009B3FDD /* Question.swift in Sources */,
-				843D92E122C2C72D009B3FDD /* AnnouncementsTableViewController.swift in Sources */,
 				843D92D822C2C650009B3FDD /* QViewController.swift in Sources */,
+				843D92E522C3D385009B3FDD /* AnnouncementsViewController.swift in Sources */,
 				843D92D022C1BA97009B3FDD /* Model.swift in Sources */,
 				843D92E322C2CB33009B3FDD /* MyQTableViewCell.swift in Sources */,
 			);
